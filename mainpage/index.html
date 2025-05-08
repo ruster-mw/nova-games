@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova games</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <div class="login-popup"></div>
+    <div class="login-card">
+        <h2>log in</h2>
+
+        <form action="" method="get" class="login-form">
+            <div class="login-input-group">
+              <label for="email">email</label>
+              <input type="email" id="login-email" placeholder="example@email.com" required>  
+            </div>
+            <div class="login-input-group">
+              <label for="password">password</label>
+              <input type="password" id="login-password" placeholder="Enter your password" required>
+            </div>
+            <input id="login-button" type="submit" value="log in">
+        </form>
+        <div class="login-option">
+          Don't have an account? <a>sign up</a>
+        </div>
+    </div>
+    <!----------------------------------------------------------->
+    <div class="signin-card">
+        <h2>sign in</h2>
+
+        <form action="" method="get" class="signin-form">
+            <div class="signin-input-group">
+                <label for="email">Set username</label>
+                <input type="text" id="signin-username" placeholder="username" required>  
+              </div>
+            <div class="signin-input-group">
+              <label for="email">Email</label>
+              <input type="email" id="signin-email" placeholder="example@email.com" required>  
+            </div>
+            <div class="signin-input-group">
+              <label for="password">Set password</label>
+              <input type="password" id="signin-password" placeholder="Enter your password" required>
+              <ul class="hints">
+                  <li class="signin-hint">A number '1 2 3...'</li>
+                  <li class="signin-hint">A special character '! # $ %...'</li>
+                  <li class="signin-hint">A capital letter 'A B C...'</li>
+                  <li class="signin-hint">At least 7 characters</li>
+              </ul>
+            </div>
+            <input id="signin-button" type="submit" value="sign in">
+        </form>
+
+        <div class="signin-option">
+          Already have an account? <a>log in</a>
+        </div>
+    </div>
+    <!----------------------------------------------------------->
+    <div class="mobile-menu">
+        <a href="#games-catalog">games</a>
+        <hr>
+        <a href="">author</a>
+        <hr>
+        <a href="../login/login.html">Log in</a>
+        <hr>
+        <a href="">Register</a>
+    </div>
+    <header class="banner">
+        <a href="index.html" class="site-name-link">
+            <header class="site-name">
+            <img src="../images/logo.svg" alt="logo" class="logo">
+            </header>
+        </a>
+        <nav class="nav-links">
+            <a href="#games-catalog" class="header-links">games</a>
+            <a href="" class="header-links">Author</a>
+            <a href="../login/login.html" class="account-links">log in</a>
+            <a href="" class="account-links account-button">sign up</a>
+            <a href="" class="account-link">
+                <svg width="70" height="70" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="all-svg" stroke="#00C49D">
+                    <circle cx="50" cy="50" r="32" fill="none" stroke-width="5"/>
+                    <circle cx="50" cy="40" r="10" fill="none" stroke-width="4"/>
+                    <path d="M50,60 C70,60 70,80 50,80 C30,80 30,60 50,60 Z" fill="none" stroke-width="4"/>
+                </svg>
+            </a>
+            <button class="hamburger-button" onclick="showMenu()">
+                <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="hamburger-icon-lines">
+                    <line x1="10" y1="20" x2="90" y2="20" stroke="white" stroke-width="13"/>
+                    <line x1="10" y1="50" x2="90" y2="50" stroke="white" stroke-width="13"/>
+                    <line x1="10" y1="80" x2="90" y2="80" stroke="white" stroke-width="13"/>
+                </svg>
+                <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="hamburger-icon-x hide">
+                    <line x1="20" y1="20" x2="80" y2="80" stroke="white" stroke-width="11"/>
+                    <line x1="20" y1="80" x2="80" y2="20" stroke="white" stroke-width="11"/>
+                </svg>
+            </button>
+        </nav>
+    </header>
+    
+    <!----------------------------------------------------------->
+    <section class="herosection">
+       <div class="background-top-stripe"></div>
+       <div class="background-bottom-stripe"></div>
+       <div class="blurry-background"></div>
+       <section class="hs-text-section">
+           <div class="hs-text-section-wrapper">
+               <h1>Find the perfect <br> games from <br> outer space! </h1>
+               <p>border at home or at school? <br> we are here for you!</p>
+           </div> 
+           <button class="find-button">
+            <h4>find now ></h4>
+           </button>
+       </section>
+       <section class="hs-cards-section">
+           <div class="card" id="card1">
+              <img class="card1-img"></img>
+              <h2 class="card1-title">title</h2>
+              <div class="card1-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore vel nam perferendis tenetur, deserunt, obcaecati magni quos amet voluptatibus quo laudantium quisquam sapiente.</div> 
+           </div>  
+           <div class="card" id="card2">
+              <img class="card2-img"></img>
+              <h2 class="card2-title">title</h2>
+              <div class="card2-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore vel nam perferendis tenetur, deserunt, obcaecati magni quos amet voluptatibus quo laudantium quisquam sapiente.</div> 
+           </div>   
+           <div class="back-card">
+               <button class="cards-button">^</button>
+           </div>
+       </section>
+    </section>
+    <!----------------------------------------------------------->
+    <main class="games-catalog-main">
+        <header class="catalog-header">
+            <h1>catalog</h1>
+        </header>
+        <section class="games-catalog" id="games-catalog">
+            <ul class="categories-list">
+                <li class="category">
+                    <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="all-svg" fill="#00C49D" stroke="#00C49D">
+                        <circle cx="10" cy="15" r="10"/>
+                        <circle cx="10" cy="50" r="10"/>
+                        <circle cx="10" cy="85" r="10"/>
+                        <circle cx="50" cy="15" r="10"/>
+                        <circle cx="50" cy="50" r="10"/>
+                        <circle cx="50" cy="85" r="10"/>
+                        <circle cx="90" cy="15" r="10"/>
+                        <circle cx="90" cy="50" r="10"/>
+                        <circle cx="90" cy="85" r="10"/>
+                    </svg>
+                    all
+                </li>
+                <li class="category">
+                    <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="all-svg" fill="#00C49D" stroke="#00C49D" stroke-width="7" stroke-linecap="round">
+                        <line x1="15" y1="7" x2="85" y2="7"/>
+                        <line x1="15" y1="7" x2="10" y2="100"/>
+                        <line x1="85" y1="7" x2="85" y2="100"/>
+                        <line x1="50" y1="60" x2="85" y2="100"/>
+                        <line x1="50" y1="60" x2="15" y2="100"/>
+                    </svg>
+                    favourites
+                </li>
+                <li class="category">
+                    <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="all-svg" stroke="#00C49D" fill="#00C49D">
+                        <rect x="15" y="5" width="70" height="90" rx="15" ry="15"  stroke-width="5" fill="none"/>
+                        <polygon points="50,25 65,50 50,75 35,50">
+                    </svg>
+                    lorem0
+                </li>
+                <li class="category">
+                    <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="all-svg" fill="#00C49D" stroke="#00C49D">
+                        <circle cx="50" cy="33" r="28 " fill="none" stroke-width="6"/>
+                        <line x1="33" y1="62" x2="15" y2="85" stroke-width="6" stroke-linecap="round"/>
+                    </svg>
+                    lorem1
+                </li>
+                <li class="category">lorem2
+
+                </li>
+                <li class="category">
+                    lorem3
+                </li>
+                <li class="category">
+                    lorem4
+                </li>
+            </ul>
+            <ul class="games-list">
+                <li class="game"></li>
+                <li class="game"></li>
+                <li class="game"></li>
+                <li class="game"></li>
+                <li class="game"></li>
+                <li class="game"></li>
+                <li class="game"></li>
+            </ul>
+        </section>
+    </main>
+    <!----------------------------------------------------------->
+    <footer class="footer">
+        <img src="../images/logo.svg" alt="logo" class="footer-logo">
+        <p class="footer-slang">a website with games from outers space!</p>
+        <section class="sources">
+            <div class="sources-links">
+                <h3>resources</h3>
+                <a href="" class="sources-link">Guides & tutorials</a>
+                <a href="" class="sources-link">Help center</a>
+                <a href="" class="sources-link">FAQ</a>
+                <a href="" class="sources-link">Developer docs</a>
+            </div>
+            <div class="sources-links">
+                <h3>legal & safety</h3>
+                <a href="" class="sources-link">Terms of service</a>
+                <a href="" class="sources-link">Privacy policy</a>
+            </div>
+            <div class="sources-circles">
+                <h3>languages</h3>
+                <div class="circles">
+                    <a href="" class="circle"></a>
+                    <a href="" class="circle"></a>
+                </div>
+            </div>
+            <div class="sources-circles">
+                <h3>find us</h3>
+                <div class="circles">
+                    <a href="" class="circle"></a>
+                    <a href="" class="circle"></a>
+                    <a href="" class="circle"></a>
+                    <a href="" class="circle"></a>
+                </div>
+            </div>
+        </section>
+        <hr class="footer-hr">
+        <p class="copyrights">Copyleft &copy; 2025-2025 NOVA.inc. All rights not reserved</p>
+    </footer>    
+
+    <script src="app.js"></script>
+</body>
+</html>
+
